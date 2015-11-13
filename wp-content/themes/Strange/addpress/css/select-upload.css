@@ -1,0 +1,128 @@
+.upload-wrap ul.file-list{
+    margin: 5px;
+}
+.upload-wrap .upload-button-wrap{
+    cursor: pointer !important;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.upload-wrap .upload-button-wrap .fileupload-file{
+    cursor: pointer;
+    font-size: 100px;
+    height: 100%;
+    filter: alpha(opacity=1);
+    -moz-opacity: 0.01;
+    opacity: 0.01;
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: left;
+}
+.upload-wrap .upload-button-wrap .select-file{
+    width: 109px;
+    height: 24px;
+    margin: 5px 5px 5px 0;
+    text-indent: -9999px;
+    border: 0;
+    background: url(../images/darkicons/blue_uploadfile.png) no-repeat top;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+}
+.upload-wrap .upload-button-wrap .uploadstatus{
+    float: left;
+    margin: 5px 5px 7px 0;
+    font-style: italic;
+    text-align: right;
+}
+
+.file-list-file{
+    position: relative;
+    height: 16px;
+    margin: 0;
+    white-space:nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.file-list-file .ap-thumb{
+    float: left;
+    width: 40px;
+    margin: 0 auto;
+    padding-right: 10px;
+    text-align: center;
+}
+.file-list-file .ap-file-info{
+    float: left;
+    max-width: 220px;
+    overflow: hidden;
+}
+.file-list-file .ap-file-info strong{
+    font-weight: bold;
+}
+.file-list-file img{
+    max-width: 40px;
+    max-height: 16px;
+    vertical-align: middle;
+    text-align: center;
+}
+.file-list-file a.delete-file{
+    display: block;
+    float: right;
+    width: 20px;
+    height: 16px;
+    margin: 0 0 0 0;
+    background: url(../images/darkicons/red_x.png) no-repeat top right;
+}
+.selectset .ap-fancyselect-show a.delete-file{
+    display: none;
+}
+
+
+#ap-thumb-preview{
+    position: absolute;
+    display: none;
+    padding: 10px;
+    background: #FFF;
+}
+#ap-thumb-preview img{
+    max-width: 400px;
+}
+
+.selectset{
+    position: relative;
+    background: #FFF;
+    color: #666;
+}
+.ap-fancyselect{
+    position: relative;
+    z-index: 1;
+    padding: 0 30px 0 0;
+    outline: 1px solid #ddd;
+    border-top: 1px solid #fff;
+    background: #F0F0F0 url(../images/dropdown_arrow.png) no-repeat 100% 11px;
+}
+.ap-fancyselect-options{
+    position: absolute;
+    max-height: 180px;
+    overflow: auto;
+    background: #FFF;
+    border-top: 1px solid #ddd;
+
+}
+.ap-fancyselect .ap-fancyselect-show{
+    background: #FFF;
+    border-right: 1px solid #ddd;
+}
+.ap-fancyselect .ap-fancyselect-option,
+.ap-fancyselect .ap-fancyselect-show{
+    height: 16px;
+    padding: 10px 10px;
+    cursor: default;
+}
+
+.ap-fancyselect .ap-fancyselect-option:hover{
+    cursor: default;
+    color: #ddd;
+    background: #2d4968 url(../images/bg_alpha_gardient.png) repeat-x top;
+}

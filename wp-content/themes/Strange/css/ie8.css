@@ -1,0 +1,28 @@
+
+.fancycaption .caption,
+.nextButton, 
+.prevButton { 
+	background-color:#000;
+	filter: alpha(opacity=90);
+}
+
+#strangemenu ul li ul  {	
+	background: url('../img/alpha.png');
+}
+
+.button, .entry_hover a {
+	 border-bottom: 1px solid #666;
+	 border-left: 1px solid #777;
+}
+
+.frame {
+	border:1px solid #ddd;	
+}
+
+.fancy_box,
+.team_box {
+	border:1px solid #ddd;
+}
+
+
+ 

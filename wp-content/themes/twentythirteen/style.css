@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Charles-Axel Pauwels</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@cpauwels">
+		<meta property="og:title" content="Charles-Axel Pauwels: Portfolio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://capauwels.com" />
+		<meta property="og:image" content="http://capauwels.com/img/share.jpg" />
+		<meta property="og:description" content="ui / ux design &middot; front-end development" />
+		<meta property="og:locale" content="en_US" />
+		<!-- Bootstrap -->
+		<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok2v=1613a3a185/"},atok:"8ae2457272e8b0b52cbfa18eabb33499",petok:"1040f68b5892e2eb75e3e29dceb114a58a35b830-1416962319-1800",zone:"capauwels.com",rocket:"0",apps:{"abetterbrowser":{"ie":"8"},"ga_key":{"ua":"UA-12718201-1","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok2v=919620257c/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link href="css/style.css" rel="stylesheet" media="screen">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="../../assets/js/html5shiv.js"></script>
+		<script src="../../assets/js/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/collapse.js" type="text/javascript"></script>
+		<script src="js/blur.min.js" type="text/javascript"></script>
+		<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>-->
+		
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+		
+		<script>
+		$( document ).ready(function() {
+		
+			//wp_enqueue_script("jquery-effects-core");
+		
+			$('#hongkong').css({'height':$('#hongkong').width()+'px'});
+			var margintop = (($( window ).height())-$('#about-header').height())/2;
+			
+			//alert(($( window ).height())+' '+$('#about-header').height())
+			
+			if( $( window ).width() >= 992 ) {
+				$('#physical-icon').height($( window ).height());
+				//$('.viewport-cube').css('margin-top', (($(window).height()-($('.viewport-cube').height()+$('.title-portfolio').height()))/2)+'px');
+			
+				//$('#digital-icon').height($( window ).height());
+				//$('.viewport-iphone').css('margin-top', (($(window).height()-($('.viewport-iphone').height()+$('.title-portfolio').height()))/2)+'px');
+			
+				$('#about-header').css('padding-top', margintop+40+'px');
+				
+				$('#about-header').animate({
+					opacity: 1
+				}, 1);
+			}
+			
+			$('.blurred-background').css('background-size', 'cover');
+			$('.blurred-background').css('background-image', 'none');
+			
+			
+			
+		    $('.blurred-background').blurjs({
+		    	source: 'body',
+		    	radius: 10,
+		    	overlay: 'rgba(0,0,0,0.4)',
+		    	offset: {
+		    			x: 1,
+		    			y: 1
+		    		}
+		    });
+		    
+		    
+		    $('#header-content').hover(function() {
+		    	$("#C1-plus").animate({
+		    		opacity: 1
+		    	}, 200);
+		    	$("#C2-plus").animate({
+		    		opacity: 1
+		    	}, 200);
+		    	$("#C2-equal").animate({
+		    		opacity: 1
+		    	}, 200);
+		    	$("#C3-equal").animate({
+		    		opacity: 1
+		    	}, 200);
+		    	$("#down-arrow").animate({
+		    		opacity: 1
+		    	}, 200);		    	
+		    }, function() {
+		    	$("#C1-plus").animate({
+		    		opacity: 0
+		    	}, 200); 
+		    	$("#C2-plus").animate({
+		    		opacity: 0
+		    	}, 200);
+		    	$("#C2-equal").animate({
+		    		opacity: 0
+		    	}, 200);
+		    	$("#C3-equal").animate({
+		    		opacity: 0
+		    	}, 200); 
+		    	$("#down-arrow").animate({
+		    		opacity: 0
+		    	}, 200); 
+		    });
+		    
+		    $('#party').hover(function() {
+		    	$(this).attr("src", "img/about/party.gif");		    	
+		    }, function() {
+		    	$(this).attr("src", "img/instagram/2012-04-30_1335801743.jpg");	
+		    });
+		    
+		    $('#art').hover(function() {
+		    	$(this).attr("src", "img/about/art.gif");		    	
+		    }, function() {
+		    	$(this).attr("src", "img/instagram/2012-12-02_1354413696.jpg");	
+		    });
+		    
+		    $('#architecture').hover(function() {
+		    	$(this).attr("src", "img/about/corbusier.jpg");		    	
+		    }, function() {
+		    	$(this).attr("src", "img/instagram/2013-05-11_1368307503.jpg");	
+		    });
+		    
+		    $('#hongkong-img').hover(function() {
+		    	
+		    	$(this).animate({
+		    		top: '-16%',
+		    		left: '-8%'
+		    	}, 1200, function () {
+		    		$(this).animate({
+		    			top: '-5%',
+		    			left: '-10%'
+		    		}, 1800, function () {
+		    			$(this).animate({
+		    				top: '-14%',
+		    				left: '-6%'
+		    			}, 1150, function () {
+		    				$(this).animate({
+		    					top: '-4%',
+		    					left: '-7%'
+		    				}, 1550, function () {
+		    					$(this).animate({
+		    						top: '-12%',
+		    						left: '-10%'
+		    					}, 1750, function () {
+		    						$(this).animate({
+		    							top: '-1%',
+		    							left: '-13%'
+		    						}, 1550, function () {
+		    							$(this).animate({
+		    								top: '-18%',
+		    								left: '-11%'
+		    							}, 1600, function () {
+		    								$(this).animate({
+		    									top: '-6%',
+		    									left: '-7%'
+		    								}, 1400, function () {
+		    									$(this).animate({
+		    										top: '-16%',
+		    										left: '-11%'
+		    									}, 1350, function () {
+		    										$(this).animate({
+		    											top: '-3%',
+		    											left: '-13%'
+		    										}, 1250, function () {
+		    											$(this).animate({
+		    												top: '-10%',
+		    												left: '-10%'
+		    											}, 1200, function () {
+		    												
+		    											});
+		    										});
+		    									});
+		    								});
+		    							});	
+		    						});
+		    					});
+		    				});	
+		    			});
+		    		});
+		    	});
+		    		
+		    		
+		    	
+		    	
+		    	
+		    	    	
+		    }, function() {
+		    	$(this).stop().animate({
+		    		top: '-10%',
+		    		left: '-10%'
+		    	}, 400);	
+		    });
+		    
+		    /*$('#photography').hover(function() {
+		    	setTimeout(function () {
+		    		if($('#photography').is(":hover")) {
+		    	    	$('body').animate({
+		    	    		opacity: 0
+		    	    	}, 100, function() {
+		    	    		$('body').animate({
+		    	    			opacity: 1
+		    	    		}, 100);
+		    	    	});
+		    	    }
+		    	}, 200);
+		    }, function() {
+		    });*/
+		    
+		    $('#mobile').hover(function() {
+		    	setTimeout(function () {
+		    		if($('#mobile').is(":hover")) {
+		    	    	$('#marimba').get(0).play();
+		    	    }
+		    	}, 200);
+		    			    	
+		    }, function() {
+		    	$('#marimba').get(0).pause();	
+		    });
+		    
+		    $('#aerospace').hover(function() {
+		    	setTimeout(function () {
+		    		if($('#aerospace').is(":hover")) {
+		    	    	$('#liftoff').get(0).play();
+		    	    }
+		    	}, 200);
+		    			    	
+		    }, function() {
+		    	$('#liftoff').get(0).pause();	
+		    });
+		    
+		    
+		    $("#header-content").click(function() {
+		        $('html, body').animate({
+		            scrollTop: $("#scroll-choices").offset().top-110
+		        }, 1000);
+		    });
+		    
+		    $(".scroll-C2").click(function(e) {
+		    	e.stopPropagation();
+		        $('html, body').animate({
+		            scrollTop: $("#scroll-chances").offset().top-78
+		        }, 1400);
+		    });
+		    
+		    $(".scroll-C3").click(function(e) {
+		    	e.stopPropagation();
+		        $('html, body').animate({
+		            scrollTop: $("#scroll-challenges").offset().top-78
+		        }, 1400);
+		    });
+		    
+		    if( $( window ).width() >= 992 ) {
+			    $('.moretext').click(function() {
+			    	thisoffset = $(this).parent().offset().top;
+			    	parentoffset = $(this).parent().parent().offset().top;
+			    	
+			    	$(this).parent().parent().children("img, #hongkong").animate({
+			    		opacity: 0
+			    	}, 200);
+			    	
+		    		$(this).parent().animate({
+		    			top: parentoffset-thisoffset+'px'
+		    		}, 500, function() {
+		    			$(this).parent().height($(this).parent().parent().height()-30);
+		    			$(this).children( ".subtext" ).css('overflow', 'auto');
+		    			$(this).children( ".subtext" ).animate({
+		    				'height': $(this).children(".subtext").height()+thisoffset-parentoffset+'px'
+		    			}, 500);
+		    		});
+		    		
+		    		$(this).toggleClass('hidden');
+		    		$(this).siblings('.lesstext').toggleClass('hidden');
+			    });
+			    
+			    $('.lesstext').click(function() {
+			    	
+			    	$(this).toggleClass('hidden');
+			    	$(this).siblings('.moretext').toggleClass('hidden');
+			    	
+			    	$(this).siblings(".subtext").animate({
+		    			'height': '60px'
+		    		}, 500, function() {
+		    			$(this).scrollTop(0);
+		    			$(this).css('overflow', 'hidden');
+		    			$(this).parent().animate({
+		    				top: '0px'
+		    			}, 500, function() {
+		    				$(this).parent().children("img, #hongkong").animate({
+		    					opacity: 1
+		    				}, 200);
+		    			});
+		    		});
+	
+			    });
+		    } 
+		    else {
+		    	$('.moretext').click(function() {
+		    		$('#moretext-mobile').toggleClass('hidden');
+		    		$('body').toggleClass('noscroll');
+		    		$("#moretext-mobile > div > .mobile-subtext").text($(this).siblings(".subtext").text());
+		    		//alert($("#moretext-mobile > div > .mobile-subtext").text());
+		    		//alert($(this).siblings(".subtext").text());
+		    	});
+		    	
+		    	$('.lesstext').click(function() {
+		    		$('#moretext-mobile').toggleClass('hidden');
+		    		$('body').toggleClass('noscroll');
+		    	});
+		    	
+		    	$('#moretext-mobile').click(function() {
+		    		$('#moretext-mobile').toggleClass('hidden');
+		    		$('body').toggleClass('noscroll');
+		    	});
+		    	
+		    	$('#moretext-mobile > div').click(function(e) {
+		    		e.stopPropagation();
+		    	});
+		    	
+		    }
+		    
+		    $( window ).resize(function() {
+		    	var margintop = (($( window ).height())-$('#about-header').height())/2;
+		    	
+		    	$('#about-header').css('padding-top', margintop+40+'px');
+		    	$('#hongkong').css({'height':$('#hongkong').width()+'px'});
+		    	$('#about-header').css('opacity', 1);
+		    });
+		    
+		});
+		
+		
+		</script>
+		<style type="text/css">
+			body.background {
+				background:url('img/instagram/2012-06-16_1339841460.jpg');
+				background-size: 0%;
+				background-repeat:no-repeat;
+				padding: 0px;
+				margin: 0px;
+				background-position: center center;
+				height: 100%;
+				background-color: #FFF;
+				background-attachment: fixed;
+			}
+			.blurred-background {
+				width: 100%;
+				margin: 0px;
+				padding: 0px;
+				/*background-size: cover;*/
+				background-position: center center;
+				background-attachment: fixed;
+				background-image: url('img/loading.gif');
+				background-position: center center;
+				background-size: 32px 32px;
+				background-repeat: no-repeat;
+			}
+		</style>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-12718201-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+	
+	<body class="background">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<a class="navbar-brand" href="#">Charles-Axel Pauwels</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index">Home</a></li>
+						<li class="active"><a href="about">About</a></li>
+						<li><a href="portfolio">Portfolio</a></li>
+						<li><a href="/cdn-cgi/l/email-protection#ee8d8f9e8f9b998b829dae89838f8782c08d8183" target="_blank">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="cover content blurred-background hidden-xs hidden-sm" style="background-color: #000;">
+						
+			<div id="about-header" class="width-100">
+				
+				<div id="header-content">
+					<div style="width: 33%; float: left;">
+						<!--<img src="img/about/C1.svg" alt="" style="width: 100%; display: block; margin: auto;"/>-->
+						
+						<svg id="C1-svg" width="100%" height="40%" viewBox="0 0 462 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						    <title>C1</title>
+						    <description>Choices</description>
+						    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						        <g id="About" transform="translate(127.000000, 1.000000)" stroke="#FFFFFF">
+						            <g id="C1">
+						                <path d="M169.484748,95.3780704 L156.979167,95.3780704 L156.979167,89.1460531 L189.46875,89.1460531 L189.46875,95.3780704 L176.963169,95.3780704 L176.963169,137.132586 L189.46875,137.132586 L189.46875,143.447697 L156.979167,143.447697 L156.979167,137.132586 L169.484748,137.132586 L169.484748,137.132586 L169.484748,95.3780704 L169.484748,95.3780704 Z M169.484748,95.3780704" id="III"></path>
+						                <path d="M207.12875,180.7475 L173.75375,164.06 C163.07375,182.41625 141.38,197.43375 117.68375,197.43375 C73.62875,197.43375 36.92125,162.39125 36.92125,116 C36.92125,68.94125 73.62875,34.56625 117.68375,34.56625 C141.38,34.56625 163.07375,49.25 173.75375,67.94 L206.795,50.585 C190.44125,23.885 162.40625,0.85625 117.68375,0.85625 C51.935,0.85625 0.87125,47.2475 0.87125,116 C0.87125,184.41875 51.935,231.14375 117.68375,231.14375 C162.40625,231.14375 190.1075,207.4475 207.12875,180.7475 Z M207.12875,180.7475" id="C" stroke-width="2" fill-opacity="0" fill="#FFFFFF"></path>
+						            </g>
+						            <g id="C1-plus" transform="translate(290.000000, 71.000000)" stroke-width="2" stroke-linecap="square">
+						                <path d="M45,0.977405071 L45,89.5041656" id="Line"></path>
+						                <path d="M45,0.977405071 L45,89.5041656" id="Line copy" transform="translate(45.000000, 45.000000) rotate(-90.000000) translate(-45.000000, -45.000000) "></path>
+						            </g>
+						        </g>
+						        <path d="M145,4 L145,230 L317,230 L317,4 L145,4 Z M145,4" id="hoverC1"></path>
+						    </g>
+						</svg>
+						
+						<h4 class="text-center">choices</h4>
+					</div>
+					
+					<div style="width: 33%; float: left;">
+						<!--<img src="img/about/C2.svg" alt="" style="width: 100%; display: block; margin: auto;"/>-->
+						
+						<svg id="C2-svg" class="scroll-C2" width="100%" height="40%" viewBox="0 0 462 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						    <title>C2</title>
+						    <description>Chances</description>
+						    <defs></defs>
+						    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						        <g id="About" transform="translate(-335.000000, 1.000000)" stroke="#FFFFFF">
+						            <g id="C2-plus" transform="translate(290.000000, 71.000000)" stroke-width="2" stroke-linecap="square">
+						                <path d="M45,0.977405071 L45,89.5041656" id="Line"></path>
+						                <path d="M45,0.977405071 L45,89.5041656" id="Line copy" transform="translate(45.000000, 45.000000) rotate(-90.000000) translate(-45.000000, -45.000000) "></path>
+						            </g>
+						            <g id="C2" transform="translate(462.000000, 0.000000)">
+						                <path d="M136.995165,95.3780704 L124.489583,95.3780704 L124.489583,89.1460531 L156.979167,89.1460531 L189.46875,89.1460531 L189.46875,95.3780704 L176.963169,95.3780704 L176.963169,137.132586 L189.46875,137.132586 L189.46875,143.447697 L156.979167,143.447697 L124.489583,143.447697 L124.489583,137.132586 L136.995165,137.132586 Z M156.979167,95.3780704 L144.473585,95.3780704 L144.473585,137.132586 L156.979167,137.132586 L169.484748,137.132586 L169.484748,95.3780704 Z M156.979167,95.3780704" id="III"></path>
+						                <path d="M207.12875,180.7475 L173.75375,164.06 C163.07375,182.41625 141.38,197.43375 117.68375,197.43375 C73.62875,197.43375 36.92125,162.39125 36.92125,116 C36.92125,68.94125 73.62875,34.56625 117.68375,34.56625 C141.38,34.56625 163.07375,49.25 173.75375,67.94 L206.795,50.585 C190.44125,23.885 162.40625,0.85625 117.68375,0.85625 C51.935,0.85625 0.87125,47.2475 0.87125,116 C0.87125,184.41875 51.935,231.14375 117.68375,231.14375 C162.40625,231.14375 190.1075,207.4475 207.12875,180.7475 Z M207.12875,180.7475" id="C" stroke-width="2" fill-opacity="0" fill="#FFFFFF"></path>
+						            </g>
+						            <g id="C2-equal" transform="translate(757.000000, 94.000000)" stroke-width="2" stroke-linecap="square">
+						                <path d="M40.5,-38.5 L40.5,42.5" id="Line copy 2" transform="translate(40.500000, 2.000000) rotate(-90.000000) translate(-40.500000, -2.000000) "></path>
+						                <path d="M40.5,1.5 L40.5,82.5" id="Line copy 3" transform="translate(40.500000, 42.000000) rotate(-90.000000) translate(-40.500000, -42.000000) "></path>
+						            </g>
+						        </g>
+						        <path d="M145,4 L145,230 L317,230 L317,4 L145,4 Z M145,4" id="hoverC2" fill-opacity="0" fill="#000000"></path>
+						    </g>
+						    
+						</svg>
+						
+						<h4 class="text-center scroll-C2">chances</h4>
+					</div>
+					
+					<div style="width: 33%; float: left;">
+						<!--<img src="img/about/C3.svg" alt="" style="width: 100%; display: block; margin: auto;"/>-->
+						
+						<svg id="C3-svg" class="scroll-C3" width="100%" height="40%" viewBox="0 0 462 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						    <title>C3</title>
+						    <description>Challenges</description>
+						    <defs></defs>
+						    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						        <g id="About" transform="translate(-797.000000, 1.000000)" stroke="#FFFFFF">
+						            <g id="C3-equal" transform="translate(757.000000, 94.000000)" stroke-width="2" stroke-linecap="square">
+						                <path d="M40.5,-38.5 L40.5,42.5" id="Line copy 2" transform="translate(40.500000, 2.000000) rotate(-90.000000) translate(-40.500000, -2.000000) "></path>
+						                <path d="M40.5,1.5 L40.5,82.5" id="Line copy 3" transform="translate(40.500000, 42.000000) rotate(-90.000000) translate(-40.500000, -42.000000) "></path>
+						            </g>
+						            <g id="C3" transform="translate(924.000000, 0.000000)">
+						                <path d="M105.505581,137.132586 L105.505581,95.3780704 L93,95.3780704 L93,89.1460531 L124.489583,89.1460531 L125.489583,89.1460531 L156.979167,89.1460531 L189.46875,89.1460531 L189.46875,95.3780704 L176.963169,95.3780704 L176.963169,137.132586 L189.46875,137.132586 L189.46875,143.447697 L156.979167,143.447697 L125.489583,143.447697 L124.489583,143.447697 L93,143.447697 L93,137.132586 Z M156.979167,95.3780704 L144.473585,95.3780704 L144.473585,137.132586 L156.979167,137.132586 L169.484748,137.132586 L169.484748,95.3780704 Z M125.489583,95.3780704 L124.489583,95.3780704 L112.984002,95.3780704 L112.984002,137.132586 L124.489583,137.132586 L125.489583,137.132586 L136.995165,137.132586 L136.995165,95.3780704 Z M125.489583,95.3780704" id="III"></path>
+						                <path d="M207.12875,180.7475 L173.75375,164.06 C163.07375,182.41625 141.38,197.43375 117.68375,197.43375 C73.62875,197.43375 36.92125,162.39125 36.92125,116 C36.92125,68.94125 73.62875,34.56625 117.68375,34.56625 C141.38,34.56625 163.07375,49.25 173.75375,67.94 L206.795,50.585 C190.44125,23.885 162.40625,0.85625 117.68375,0.85625 C51.935,0.85625 0.87125,47.2475 0.87125,116 C0.87125,184.41875 51.935,231.14375 117.68375,231.14375 C162.40625,231.14375 190.1075,207.4475 207.12875,180.7475 Z M207.12875,180.7475" id="C" stroke-width="2" fill-opacity="0" fill="#FFFFFF"></path>
+						            </g>
+						        </g>
+						        <path d="M145,4 L145,230 L317,230 L317,4 L145,4 Z M145,4" id="hoverC3" fill-opacity="0" fill="#000000"></path>
+						    </g>
+						</svg>
+						<h4 class="text-center scroll-C3">challenges</h4>
+					</div>
+					
+					<p class="text-center"><img src="img/down.svg" style="opacity: 0;" id="down-arrow" /></p>
+				</div>
+				
+				<div class="clearfix"></div>
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		<main>
+			<div id="about-header-sm" class="blurred-background visible-sm visible-xs" style="background-color: #000; background-image: none; margin-top: -60px; padding-top: 150px; padding-bottom:50px;">
+				<p class="text-center"><img src="img/about/C1-mobile.svg" alt="" /></p>
+				<h1 class="margin-top-sm">Choices</h1>
+				
+			</div>
+			
+			<h1 class="light margin-top-md hidden-sm hidden-xs" id="scroll-choices">Choices</h1>
+			<blockquote class="width-100 text-center" cite="Jean-Paul Sartre">Je l'ai choisi. On est ce qu'on veut. <span class="about-author">&mdash; Jean-Paul Sartre</span></blockquote>
+			
+			<div class="container margin-top-md">
+				<div class="row">
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/brussels.jpg" alt="" style="width: 100%; opacity: 1;" />
+						<div class="tag-text">
+							<h5>Brussels &middot; Hometown</h5>
+							<p class="subtext">Controversial in its beauty next to its ugliness, in its divide that is actually only a perception, in its being the capital of Europe but struggling to be the capital of Belgium.  It is still the place I call home and where I catch up over a (or more) Belgian specialty beers with family and friends.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/aerospace.jpg" alt="" id="aerospace" class="width-100" />
+						<audio id="liftoff" src="img/audio/liftoff.mp3"></audio>
+						<div class="tag-text">
+							<h5>Delft &middot; Aerospace Eng.</h5>
+							<p class="subtext">Rode bicycles. Studied aerospace engineering (TU Delft). Rode bicycles. Focussed on aerodynamics and thermodynamics. Rode bicycles. Built and fired a rocket. Rode bicycles. Got into material sciences and physics. Rode bicycles. Broke up with my girlfriend&hellip; while riding a bicycle.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm visible-xs"></div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-07-07_1373226144.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>New York &middot; Parsons</h5>
+							<p class="subtext">Parsons has been life changing for me by means of its two summer courses. Living alone for the first time in the city of all cities. Realizing that I needed to take my creative side into account. Understanding that I wanted to be involved in design as well as engineering. Forging an affection with NY that I know will be lifelong.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2012-06-20_1340197640.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Delft &middot; Industrial Design Eng.</h5>
+							<p class="subtext">Rode more bicycles and really found that I wanted to do something more creative than Aerospace, linking my engineering background to design. Finished my Industrial Design and Engineering bachelor degree at the TU Delft and really developed an interest in 3D printing, mechanics, ergonomics, manufacturing and economics. All this from a solid base of aesthetics, form and design. Loved every minute of it.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-07-19-17.54.12-2.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>New York &middot; Coworking</h5>
+							<p class="subtext">Spent two summers living in NY dedicating myself to the development of two projects (<a href="http://69.160.42.92/dates.io">dates.io</a>, <a href="http://placeli.st">PlaceList</a>). Set an ambitious work scheme and deadline for these projects, working from the New Work City coworking space. Got heaps of feedback, support, critique and encouragement. Learned to demo product in front of audiences and reached MVP status on both projects. <a href="https://medium.com/design-startups/d74413e71b38">Read my blogpost.</a></p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<div id="hongkong"><img src="img/instagram/2012-12-08_1354927865.jpg" alt="" id="hongkong-img" /></div>
+						<div class="tag-text">
+							<h5>Hong Kong &middot; Exchange</h5>
+							<p class="subtext">Life at the crossroads between East and West broadened my horizon. Studied one semester Product Design at the Hong Kong Polytechnic University sharing the tiniest of flats with a roommate. Made lifetime friends across the world from one single city, understood that eating out is a way of life, that Chinese pile up workload like they load up a bicycle and that working with Chinese is exciting but requires a mindset adaptation.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm visible-xs"></div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-04-17_1366191195.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Berlin &middot; Coworking</h5>
+							<p class="subtext">Probably the hippest place in Europe (Jawohl, Deutschland&hellip;) and a buzzing, creative place for music, design, art, publishing, startups. Spent some time in Berlin working on <a href="http://placeli.st">Placelist</a> at the betahaus coworking space. Another city that carried my heart away.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-08-14_1376449445.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>San Francisco &middot; Coworking</h5>
+							<p class="subtext">Geek town par excellence. Inspiring start-up scene that is incredibly different from Europe. Everyone seems to be into tech (or coffee). The perfect place for coworking and meeting likeminded people. Shame about <a href="http://instagram.com/karlthefog">@KarlTheFog</a> though.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="about-header-sm" class="blurred-background visible-sm visible-xs" style="background-color: #000; background-image: none; padding-top: 60px; padding-bottom:50px;">
+				<!--<p class="text-center margin-top-sm hidden-sm hidden-xs" id="scroll-chances"><img src="img/about/plus.svg" alt="" /></p>-->
+				<p class="text-center"><img src="img/about/C2-mobile.svg" alt="" /></p>
+				<h1 class="margin-top-sm">Chances</h1>
+			</div>
+			
+			<p class="text-center margin-top-sm hidden-sm hidden-xs" id="scroll-chances"><img src="img/about/plus.svg" alt="" /></p>
+			<h1 class="light margin-top-md hidden-sm hidden-xs">Chances</h1>
+			<blockquote class="width-100 text-center" cite="Milton Berle">If opportunity doesn't knock, build a door. <span class="about-author">&mdash; Milton Berle</span></blockquote>
+			
+			<div class="container margin-top-md">
+				<div class="row">
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-05-10_1368211446.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Technology</h5>
+							<p class="subtext">Making people's life better when it is applied well. Creates opportunities and can take people out of their isolation. Will continue to define the future.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-10-04_1380867228.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Travel</h5>
+							<p class="subtext">It's not the destination that matters but the road itself. That's why it's only when you get lost that you start to know where you are.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm visible-xs"></div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-07-07_1373172755.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Languages</h5>
+							<p class="subtext">My parents taught me to speak Dutch. Our nannies taught me English with local accents from Edinburgh (aye, right!) to Wimbledon (dear me!) and everything in between. With primary and secondary school in French, it's still English that I think and work in most efficiently.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/family.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Family</h5>
+							<p class="subtext">A bunch of people that don't hesitate to challenge and bring out the best in me. Or slap the truth right in my face without ulterior motives. From them I received: a decent dose of common sense, the understanding that you can achieve what you want if you work for it, that the world is a big but accessible place and that quality, beauty and respect matter. All this held together in an environment of art, fashion, food, business, freedom and responsibility.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2012-06-16_1339852650.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Food</h5>
+							<p class="subtext">I love good food. I am a foodie who loves to shop for great food, prepare it and eat it. Preferably accompanied by friends, a good bottle of wine or a specialty beer. A true carnivore who considers the fresh green stuff to be input for what will ultimately yield a well-marbled, dry aged ribeye steak.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2012-12-02_1354413696.jpg" alt="" id="art" class="width-100" />
+						<div class="tag-text">
+							<h5>Art</h5>
+							<p class="subtext">Seeking expressions of uninhibited creativity and aesthetics. Finding it occasionally at museums, expositions, art galleries. When you find it though, it can blow your socks off. Put a dent in your skull. Particularly like art fairs: business in super sized museums.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm visible-xs"></div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-05-11_1368307503.jpg" alt="" id="architecture" class="width-100" />
+						<div class="tag-text">
+							<h5>Architecture</h5>
+							<p class="subtext">Creativity on the leash of the laws of physics. Good architecture makes heavy buildings look afloat. Like la Cit&eacute; Radieuse by Le Corbusier in Marseille. Majestic, serene, human, timeless, unique. The French designer Mora-Ito recently bought the rooftop solarium and gymnasium in the picture as a piece of art. Fortunately keeps it open to the public.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/photography.jpg" alt="" id="photography" class="width-100" />
+						<div class="tag-text">
+							<h5>Photography</h5>
+							<p class="subtext">My visual memory bank and the instrument with which I can freeze and share my most treasured moments.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/29ed443e51d011e3b88d12f53018c822_8.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Planes</h5>
+							<p class="subtext">I started drawing them when I was four, building them in Lego at six and in plaster at ten. I went to all the Le Bourget shows since I was twelve. I studied aerospace engineering at eighteen. Their physics never cease to amaze me, even though they failed on two occasions when I happened to be in one of them&hellip;</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-11-12_0.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Maps</h5>
+							<p class="subtext">My friends refer to me as a walking GPS. I seem to have been born with a Google Maps blueprint in my brain. Mapping, cartography and geolocation fascinate me and I currently have two geo applications in the starting blocks.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm visible-xs"></div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2012-06-16_1339843010.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Connections</h5>
+							<p class="subtext">Reduce prejudice through connecting people by means of technology. Learn from differences rather than judge them. Understand various points of view and come up with solutions that are in the interest of all. Only through communication. Communication by being connected. Connection through technology.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2012-04-30_1335801743.jpg" alt="" class="width-100" id="party" />
+						<div class="tag-text">
+							<h5>Party</h5>
+							<p class="subtext">From Miami to Ibiza, Las Vegas to Hong Kong, Amsterdam to Brussels, Shanghai to Mumbai, the world is a great place to party (after work&hellip;).</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="about-header-sm" class="blurred-background visible-sm visible-xs" style="background-color: #000; background-image: none; padding-top: 60px; padding-bottom:50px;">
+				<p class="text-center"><img src="img/about/C3-mobile.svg" alt="" /></p>
+				<h1 class="margin-top-sm">Challenges</h1>
+			</div>
+			
+			<p class="text-center margin-top-sm hidden-xs hidden-sm" id="scroll-challenges"><img src="img/about/equal.svg" alt="" /></p>
+			<h1 class="light margin-top-md hidden-xs hidden-sm">Challenges</h1>
+			<blockquote class="width-100 text-center" cite="T.S. Eliot">If you aren't in over your head, how do you know how tall you are? <span class="about-author">&mdash; T.S. Eliot</span></blockquote>
+			<div class="container margin-top-md">
+				<div class="row">
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-07-28_1375043891.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Global</h5>
+							<p class="subtext">No borders, no distances, no limits but opportunities, experiences and exchanges. The world is my home and my workspace.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2012-06-16_1339860027.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Design</h5>
+							<p class="subtext">I'm not just interested in the latest trends, but essentially in what has been designed well; contemporary, modern or vintage. Seeking a balance between form and functionality for me is essential in products, objects, graphics, web or interactive applications.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm visible-xs"></div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-08-30_1377891558.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Engineering</h5>
+							<p class="subtext">My state of mind. It is the analytical framework that I use to develop the solutions for an issue. Engineering follows the creative process; it is the perspiration behind the inspiration. It is what turns the spark into a fire.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-08-04_1375656858.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Entrepreneurship</h5>
+							<p class="subtext">To me this means (inter)action, risk, challenge, development and reward. A focus on finding and designing solutions that are beautiful, functional and technical. I'd like to apply my skills and knowledge to any venture that would give me the opportunity to reach a common goal while broadening my horizon.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2012-08-21_1345570170.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Startup</h5>
+							<p class="subtext">Analyses, decisions, involvement, networking, co-working and a lot of hard work. Bringing people, minds and opinions together to create something new thrills me. I love the fast-paced environment and I can work under extreme pressure. I was accepted for the European StartupBus program in October 2013, managed to get a team around an idea I had, jointly expanded the idea, build the model and the BP and finally got second with the 'Unplanned' app at the Pioneers Festival in Vienna.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-08-10_1376097287.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>UI / UX</h5>
+							<p class="subtext">What I want to do. My ambition. What else?</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm visible-xs"></div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2012-11-01_1351770457.jpg" alt="" id="mobile" class="width-100" />
+						<audio id="marimba" src="img/audio/marimba.mp3"></audio>
+						<div class="tag-text">
+							<h5>Mobile</h5>
+							<p class="subtext">The future is in the continuous engagement of the user with the product; at all time and at all places. The constraints are important, the challenges are huge and the evolutions is fast. Big things coming to the small screen. Hope to be part of it. Front row if I can.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6 margin-bottom-sm">
+						<img src="img/instagram/2013-01-11_1357894742.jpg" alt="" class="width-100" />
+						<div class="tag-text">
+							<h5>Teamwork</h5>
+							<p class="subtext">Is being able to function well in an environment of people with different competences and accepting their differences as a value. I look forward to be part of an ambitious, passionate, multidisciplinary team and share in its synergy and partnership.</p>
+							<p class="moretext">more</p><p class="lesstext hidden">less</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</main>
+		
+		
+		<!--hidden-sm hidden-xs-->
+		<div class="blurred-background ">
+			<div class="container" id="physical-footer">
+				
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="text-center margin-top-lg">Intrigued?</h4>
+						
+						<p class="project-description margin-top-sm margin-bottom-sm">We may have common interests.</p>
+						<p class="text-center"><a class="btn btn-transparent btn-lg" href="/cdn-cgi/l/email-protection#a2c1c3d2c3d7d5c7ced1e2c5cfc3cbce8cc1cdcf" target="_blank">Contact</a>&nbsp;<a class="btn btn-transparent btn-lg" href="downloads/Charles-Axel Pauwels - Résumé.pdf" target="_blank">Résumé</a></p>
+						<p class="text-center margin-bottom-md"><a style="color: white; cursor: pointer; font-weight: 300;" href="portfolio" class="digital-goto">check out my portfolio</a></p>
+						
+						<h4 class="text-center">Share</h4>
+						<p class="text-center margin-bottom-md">
+							<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcapauwels.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="../img/facebook.svg" class="share-icon" /></a>
+							<a href="https://twitter.com/share?url=http%3A%2F%2Fcapauwels.com&text=Portfolio%20by%20Charles-Axel%20Pauwels%20%E2%80%94%20ui%20%2F%20ux%20design%20%C2%B7%20front-end%20development%20%E2%80%94&related=@cpauwels" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=256,width=600');return false;"><img src="../img/twitter.svg" class="share-icon" /></a>
+							<a href="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fcapauwels.com&media=http%3A%2F%2Fcapauwels.com%2Fimg%2Fshare.jpg&description=Portfolio%20by%20Charles-Axel%20Pauwels%20%E2%80%94%20ui%20%2F%20ux%20design%20%C2%B7%20front-end%20development" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=330,width=750');return false;"><img src="../img/pinterest.svg" class="share-icon" /></a>
+							<a href="https://plus.google.com/share?url=http%3A%2F%2Fcapauwels.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="../img/googleplus.svg" class="share-icon" style="padding-right: 20px; width: 90px;" /></a>
+						</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<div id="moretext-mobile" class="visible-xs visible-sm hidden">
+			<div>
+				<p class="mobile-subtext"></p>
+				<p class="lesstext">less</p>
+			</div>
+		</div>
+	<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>

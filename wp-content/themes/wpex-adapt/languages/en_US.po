@@ -1,0 +1,236 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Adapt WordPress Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-09 19:54-0800\n"
+"PO-Revision-Date: 2014-05-09 19:54-0800\n"
+"Last-Translator: AJ Clarke <wpexplorer@gmail.com>\n"
+"Language-Team: WPExplorer.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;_n;_nx\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"Language: English\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:10
+msgid "404 Error"
+msgstr ""
+
+#: ../404.php:15
+msgid "Sorry, the page you were looking for could not be found."
+msgstr ""
+
+#: ../author.php:12
+msgid "Posts by"
+msgstr ""
+
+#: ../comments.php:28
+msgid "One Comment"
+msgstr ""
+
+#: ../comments.php:38
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:44
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content.php:39 ../single.php:23
+msgid "On"
+msgstr ""
+
+#: ../content.php:40 ../single.php:24
+msgid "By"
+msgstr ""
+
+#: ../content.php:42 ../single.php:26
+msgid "With"
+msgstr ""
+
+#: ../footer.php:36
+msgid "Scroll Up"
+msgstr ""
+
+#: ../search.php:11
+msgid "Search Results For"
+msgstr ""
+
+#: ../search.php:26
+msgid "No results found for that query."
+msgstr ""
+
+#: ../admin/front-end/options.php:43 ../admin/front-end/options.php:67
+msgid "Save All Changes"
+msgstr ""
+
+#: ../admin/front-end/options.php:68
+msgid "Options Reset"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1544
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../functions/comments-callback.php:28
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions/comments-callback.php:57
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions/welcome.php:91
+msgid "About"
+msgstr ""
+
+#: ../functions/welcome.php:94
+msgid "Recommended"
+msgstr ""
+
+#: ../functions/welcome.php:118
+msgid "Theme"
+msgstr ""
+
+#: ../functions/welcome.php:120
+msgid "Thank you for choosing this WordPress theme for your website."
+msgstr ""
+
+#: ../functions/welcome.php:131
+msgid "GPL License"
+msgstr ""
+
+#: ../functions/welcome.php:132
+msgid ""
+"This theme is licensed under the GPL license. This means you can use it for "
+"anything you like as long as it remains GPL."
+msgstr ""
+
+#: ../functions/welcome.php:136
+msgid "Credits"
+msgstr ""
+
+#: ../functions/welcome.php:138
+msgid ""
+"This theme was created by <a href=\"http://www.wpexplorer.com\" target="
+"\"_blank\">WPExplorer.com</a>."
+msgstr ""
+
+#: ../functions/welcome.php:140
+msgid "We work hard to develop, host, release and update this theme."
+msgstr ""
+
+#: ../functions/welcome.php:142
+msgid "A back-link to our website and or a donation is very much appreciated!"
+msgstr ""
+
+#: ../functions/welcome.php:147
+msgid "Liability"
+msgstr ""
+
+#: ../functions/welcome.php:149
+msgid ""
+"WPExplorer.com shall not be held liable for any damages, including, but not "
+"limited to, the loss of data or profit, arising from the use of, or "
+"inability to use, this theme."
+msgstr ""
+
+#: ../functions/welcome.php:154
+msgid "Getting Started"
+msgstr ""
+
+#: ../functions/welcome.php:156
+msgid ""
+"Below you will find some useful links to get you started with this theme."
+msgstr ""
+
+#: ../functions/welcome.php:158
+msgid "Customize Your Site"
+msgstr ""
+
+#: ../functions/welcome.php:159
+msgid "Theme Page"
+msgstr ""
+
+#: ../functions/welcome.php:160
+msgid "Documentation"
+msgstr ""
+
+#: ../functions/welcome.php:161
+msgid "Changelog"
+msgstr ""
+
+#: ../functions/welcome.php:181
+msgid "Recommendations"
+msgstr ""
+
+#: ../functions/welcome.php:183
+msgid "Below are some of the resources we love and recommend."
+msgstr ""
+
+#: ../functions/welcome.php:193
+msgid "Plugins"
+msgstr ""
+
+#: ../functions/welcome.php:194
+msgid ""
+"Below you will find links to plugins we (WPExplorer.com staff) personally "
+"like and recommend. None of these plugins are required for your theme to "
+"work, they simply add additional functionality."
+msgstr ""
+
+#: ../functions/welcome.php:209
+msgid "Total Theme"
+msgstr ""
+
+#: ../functions/welcome.php:210
+msgid ""
+"Check out our most advanced (yet easy to use) and flexible theme to date."
+msgstr ""
+
+#: ../functions/welcome.php:215
+msgid "WordPress Hosting"
+msgstr ""
+
+#: ../functions/welcome.php:216
+msgid ""
+"If you need fast and <a href=\"http://www.wpexplorer.com/wordpress-hosting/"
+"\" target=\"_blank\">reliable hosting</a> we recommend the same host we use "
+"and love WPEngine."
+msgstr ""
+
+#: ../functions/welcome.php:221
+msgid "Deals & Coupons"
+msgstr ""
+
+#: ../functions/welcome.php:222
+msgid "Check out our coupons page for great deals on WordPress resources."
+msgstr ""
+
+#: ../functions/gallery-metabox/gmb-admin.php:120
+msgid "Add/Edit Images"
+msgstr ""
+
+#: ../functions/gallery-metabox/gmb-admin.php:130
+msgid "Enable Lightbox for this gallery?"
+msgstr ""
+
+#: ../functions/gallery-metabox/gmb-admin.php:153
+msgid "Add Images to Gallery"
+msgstr ""
+
+#: ../functions/gallery-metabox/gmb-admin.php:155
+msgid "Add to gallery"
+msgstr ""
+
+#: ../functions/gallery-metabox/gmb-admin.php:172
+msgid "Remove image"
+msgstr ""
+
+#: ../templates/portfolio-filterable.php:24
+msgid "All"
+msgstr ""

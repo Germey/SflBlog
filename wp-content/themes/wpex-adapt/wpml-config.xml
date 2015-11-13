@@ -1,0 +1,17 @@
+<wpml-config>
+	<custom-fields>
+		<custom-field action="copy">wpex_slides_video</custom-field>
+		<custom-field action="copy">wpex_slides_url/custom-field>
+		<custom-field action="copy">wpex_slides_url_target</custom-field>
+		<custom-field action="copy">wpex_highlights_url</custom-field>
+		<custom-field action="translate">wpex_portfolio_post_media_alternative</custom-field>
+	</custom-fields>
+	<custom-types>
+		<custom-type translate="1">portfolio</custom-type>
+		<custom-type translate="1">hp_highlights</custom-type>
+		<custom-type translate="1">slides</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">portfolio_category</taxonomy>
+	</taxonomies>
+</wpml-config>

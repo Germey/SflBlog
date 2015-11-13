@@ -1,0 +1,22 @@
+== Changelog ==
+
+= Theme Name: swiftray =
+
+= Version: 1.0.2 =
+* wp_enqueue_scripts issue, Fixed.
+* Translation is missing in some text strings issue, Fixed.
+* CSS/JS must be enqueued properly issue, Fixed.
+* Now sanitized all option.
+* wp_link_pages added in single.php and page.php
+
+= Version: 1.0.1 =
+* Code optimized
+* All support function hooked into after_setup_theme
+* Analytics code option function removed.
+* All previous review issues fixed.
+* Front-page.php removed and created home.php instead for reading setting front page configuration.
+
+= Version: 1.0 =
+
+* Swiftray is created on 22/01/2014.
+

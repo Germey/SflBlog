@@ -1,0 +1,1 @@
+ <?php echo get_option('Yunsd_ad_top2'); ?>
